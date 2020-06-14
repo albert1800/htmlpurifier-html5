@@ -82,9 +82,17 @@ Apart from HTML Purifier's built-in [configuration directives](http://htmlpurifi
   Type: [Boolean](http://htmlpurifier.org/live/configdoc/plain.html#type-bool)\
   Default: `false`
 
-  While deprecated in HTML 4.01 / XHTML 1.0 context, in HTML5 it used for enabling
+  While deprecated in HTML 4.01 / XHTML 1.0 context, in HTML5 it is used for enabling
   support for namespaced attributes and XML-style empty elements.
 
+* __Attr.AllowedInputTypes__
+
+  Version added: 0.1.12\
+  Type: [Lookup](http://htmlpurifier.org/live/configdoc/plain.html#type-lookup)\
+  Default: `null`
+  
+  
+  
 
 ## Supported HTML5 elements
 
