@@ -12,6 +12,9 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_SubmitTest
             'input submit empty value' => array(
                 '<input type="submit" name="foo" value="">',
             ),
+            'input submit no value' => array(
+                '<input type="submit" name="foo">',
+            ),
             'input submit valid attributes' => array(
                 '<input type="submit" disabled inputmode="text">',
             ),

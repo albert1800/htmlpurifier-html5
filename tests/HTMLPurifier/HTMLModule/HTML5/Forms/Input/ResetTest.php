@@ -12,6 +12,9 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_ResetTest
             'input reset empty value' => array(
                 '<input type="reset" name="foo" value="">',
             ),
+            'input reset no value' => array(
+                '<input type="reset" name="foo">',
+            ),
             'input reset valid attributes' => array(
                 '<input type="reset" disabled inputmode="text">',
             ),

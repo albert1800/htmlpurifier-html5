@@ -9,6 +9,9 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_UrlTest
             'input url empty value' => array(
                 '<input type="url" value="">',
             ),
+            'input url no value' => array(
+                '<input type="url">',
+            ),
             'input url absolute uri' => array(
                 '<input type="url" value="https://foo-bar.com/file.txt">',
             ),
@@ -16,7 +19,6 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_UrlTest
                 '<input type="url" value="file.txt">',
                 '<input type="url">',
             ),
-
             'input url valid attributes' => array(
                 '<input type="url" disabled inputmode="url" maxlength="64" minlength="0" name="url" pattern="http://.*" placeholder="foo" readonly required size="10">',
             ),

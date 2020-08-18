@@ -13,6 +13,7 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_CheckboxTest
                 '<input type="checkbox" name="foo" value="">',
             ),
             'input checkbox no value' => array(
+                '<input type="checkbox" name="foo">',
                 '<input type="checkbox" name="foo" value="">',
             ),
             'input checkbox valid attributes' => array(

@@ -15,7 +15,6 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_ColorTest
             'input color no value' => array(
                 '<input type="color" name="foo" value="">',
             ),
-
             'input color invalid value 1' => array(
                 '<input type="color" name="foo" value="foo">',
                 '<input type="color" name="foo">',
@@ -28,7 +27,6 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_ColorTest
                 '<input type="color" name="foo" value="#ff000000">',
                 '<input type="color" name="foo">',
             ),
-
             'input color valid attributes' => array(
                 '<input type="color" disabled inputmode="text">',
             ),

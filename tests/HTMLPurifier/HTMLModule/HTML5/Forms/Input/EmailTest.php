@@ -9,6 +9,9 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_EmailTest
             'input email empty value' => array(
                 '<input type="email" value="">',
             ),
+            'input email no value' => array(
+                '<input type="email">',
+            ),
             'input email single value' => array(
                 '<input type="email" value="foo@example.com">',
             ),
@@ -16,7 +19,6 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_EmailTest
                 '<input type="email" value="foo@example.com, bar@example.com" multiple>',
                 '<input type="email" value="foo@example.com,bar@example.com" multiple>',
             ),
-
             'input email invalid value' => array(
                 '<input type="email" value="foo">',
                 '<input type="email">',
@@ -25,7 +27,6 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_EmailTest
                 '<input type="email" value="foo,bar@example.com,baz" multiple>',
                 '<input type="email" value="bar@example.com" multiple>',
             ),
-
             'input email valid attributes' => array(
                 '<input type="email" disabled inputmode="email" maxlength="64" minlength="0" multiple name="email" pattern="[a-z]+@example\.com" placeholder="foo" readonly required size="10">',
             ),

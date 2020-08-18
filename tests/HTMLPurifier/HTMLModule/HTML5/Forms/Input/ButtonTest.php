@@ -12,6 +12,9 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_ButtonTest
             'input button empty value' => array(
                 '<input type="button" name="foo" value="">',
             ),
+            'input button no value' => array(
+                '<input type="button" name="foo">',
+            ),
             'input button valid attributes' => array(
                 '<input type="button" disabled inputmode="text">',
             ),

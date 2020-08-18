@@ -328,12 +328,6 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_InputTest extends HTMLPurifier_HTMLMod
     public function testRange()
     {}
 
-    public function testSearch()
-    {}
-
-    public function testTel()
-    {}
-
     public function testText()
     {}
 

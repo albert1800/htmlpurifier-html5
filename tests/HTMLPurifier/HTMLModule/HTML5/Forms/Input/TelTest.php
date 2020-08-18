@@ -12,6 +12,9 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_TelTest
             'input tel empty value' => array(
                 '<input type="tel" value="">',
             ),
+            'input tel no value' => array(
+                '<input type="tel">',
+            ),
             'input tel invalid attributes' => array(
                 '<input type="tel" accept="text/plain" alt="foo" checked dirname="foo.dir" height="10" max="10" min="0" multiple src="foo.png" step="1" width="10">',
                 '<input type="tel">',
