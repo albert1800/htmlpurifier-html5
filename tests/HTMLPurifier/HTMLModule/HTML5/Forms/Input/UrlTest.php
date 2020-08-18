@@ -1,6 +1,7 @@
 <?php
 
-class HTMLPurifier_HTMLModule_HTML5_Forms_InputUrlTest extends HTMLPurifier_HTMLModule_HTML5_Forms_InputTest
+class HTMLPurifier_HTMLModule_HTML5_Forms_Input_UrlTest
+    extends HTMLPurifier_HTMLModule_HTML5_Forms_InputTest
 {
     public function dataProvider()
     {
