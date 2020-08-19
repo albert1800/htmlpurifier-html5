@@ -7,13 +7,13 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_DateTest
     {
         return array(
             'input date' => array(
-                '<input type="date" name="foo" value="2005-04-02">',
+                '<input type="date" name="foo" value="2005-04-02" disabled inputmode="text" min="2004-04-10" max="2010-04-10" readonly required step="1">',
             ),
             'input date empty value' => array(
                 '<input type="date" name="foo" value="">',
             ),
             'input date no value' => array(
-                '<input type="date" name="foo" value="">',
+                '<input type="date" name="foo">',
             ),
             'input date datetime value' => array(
                 '<input type="date" name="foo" value="2005-04-02 21:37">',
@@ -22,9 +22,6 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_DateTest
             'input date invalid value' => array(
                 '<input type="date" name="foo" value="foo">',
                 '<input type="date" name="foo">',
-            ),
-            'input date valid attributes' => array(
-                '<input type="date" disabled inputmode="text" min="2004-04-10" max="2010-04-10" readonly required step="1">',
             ),
             'input date step any' => array(
                 '<input type="date" step="any">',

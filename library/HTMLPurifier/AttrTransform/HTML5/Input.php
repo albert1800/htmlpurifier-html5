@@ -310,8 +310,8 @@ class HTMLPurifier_AttrTransform_HTML5_Input extends HTMLPurifier_AttrTransform
         // mandatory for checkbox, radio, and hidden.
         // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-value
         // Nu Validator diverges from the WHATWG spec, as it defines 'value'
-        // attribute as required, see:
-        // https://github.com/validator/validator/blob/master/schema/html5/web-forms.rnc
+        // attribute as required, where in fact it is optional, and may be an empty string:
+        // https://html.spec.whatwg.org/multipage/input.html#button-state-(type=button)
         if (!isset($attr['value']) && ($t === 'checkbox' || $t === 'radio' || $t === 'hidden')) {
             $attr['value'] = '';
         }

@@ -6,8 +6,8 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_TelTest
     public function dataProvider()
     {
         return array(
-            'input tel valid' => array(
-                '<input type="tel" disabled inputmode="tel" maxlength="64" minlength="0" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" readonly required value="+1202 456 1111" size="10">',
+            'input tel' => array(
+                '<input type="tel" disabled inputmode="tel" maxlength="64" minlength="0" name="foo" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="foo" readonly required value="+1202 456 1111" size="10">',
             ),
             'input tel empty value' => array(
                 '<input type="tel" value="">',

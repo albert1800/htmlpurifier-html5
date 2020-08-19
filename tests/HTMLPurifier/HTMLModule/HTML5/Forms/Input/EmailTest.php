@@ -6,6 +6,9 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_EmailTest
     public function dataProvider()
     {
         return array(
+            'input email' => array(
+                '<input type="email" disabled inputmode="email" maxlength="64" minlength="0" multiple name="email" pattern="[a-z]+@example\.com" placeholder="foo" readonly required size="10">',
+            ),
             'input email empty value' => array(
                 '<input type="email" value="">',
             ),
@@ -26,9 +29,6 @@ class HTMLPurifier_HTMLModule_HTML5_Forms_Input_EmailTest
             'input email invalid multiple values' => array(
                 '<input type="email" value="foo,bar@example.com,baz" multiple>',
                 '<input type="email" value="bar@example.com" multiple>',
-            ),
-            'input email valid attributes' => array(
-                '<input type="email" disabled inputmode="email" maxlength="64" minlength="0" multiple name="email" pattern="[a-z]+@example\.com" placeholder="foo" readonly required size="10">',
             ),
             'input email invalid attributes' => array(
                 '<input type="email" accept="text/plain" alt="email" checked dirname="foo.dir" height="10" max="10" min="0" src="foo.png" step="1" width="10">',

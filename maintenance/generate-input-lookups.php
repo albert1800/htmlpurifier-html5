@@ -1,11 +1,10 @@
 #!/usr/bin/php
 <?php
 
-// An error message from https://validator.w3.org/nu for <input type="text" min="0" />
+// An error message from https://validator.nu for <input type="text" min="0" />
 // used for extracting map of allowed input attributes depending on input type.
 // The error message itself is based on https://html.spec.whatwg.org/dev/input.html#input-type-attr-summary
-// although is missing minlength attribute. It's worth noting that https://validator.nu/
-// is no longer up to date with the WHATWG HTML5 spec (as of Aug 2020).
+// although is missing minlength attribute.
 $input = '
 accept	when type is file
 alt	when type is image
